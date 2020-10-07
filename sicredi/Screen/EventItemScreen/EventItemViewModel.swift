@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum EventItemViewEvent {
+enum EventItemEvent {
     case viewDidApper
     case tapCheck(UIViewController)
     case tapShared
@@ -53,7 +53,7 @@ final class EventItemViewModel {
 // MARK: - Methods
 
 extension EventItemViewModel {
-    func send(in event: EventItemViewEvent) {
+    func send(in event: EventItemEvent) {
         switch event {
         case .viewDidApper:
             fetchEvent()
